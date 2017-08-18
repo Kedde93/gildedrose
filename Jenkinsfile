@@ -2,7 +2,6 @@ node {
     stage ('Github'){
         git credentialsId: 'Jenkins SSH', url: 'https://github.com/Kedde93/gildedrose.git'
 
-        git checkout scm
     }
 
     stage ('Maven'){
